@@ -10,6 +10,7 @@
 - **数据看板**：基于 ECharts 的景点数据统计分析
 - **管理后台**：景点数据的管理与维护
 - **景点数据**：通过爬虫采集高德地图 POI 数据，清洗后入库
+- **接口测试**：后端附带 unittest 测试用例（认证 / 算法 / 规划 / 评分等模块）
 
 ## 技术栈
 
@@ -83,9 +84,11 @@ npm run dev
 │   │   ├── admin_bp.py   # 管理后台接口
 │   │   └── tip_bp.py     # 攻略/提示接口
 │   ├── scripts/          # 数据导入、成本矩阵填充等脚本
+│   ├── tests/            # unittest 接口测试
 │   ├── config.py         # 全局配置（数据库 / JWT / NSGA-Ⅱ 参数）
 │   └── run.py            # 启动入口
 ├── frontend/             # Vue 3 前端
+├── crawler/              # 高德 POI 数据采集与清洗脚本
 ├── travel_planner.sql    # 数据库初始化脚本
 └── start-all.bat         # 一键启动脚本
 ```
